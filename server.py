@@ -1,16 +1,15 @@
+import json
 import logging
 import sys
-from threading import Thread
 from time import sleep
-
+from threading import Thread
 from colorama import init
 from flask import Flask, request
-
 from block import Block
-from console import Console
 from crypto_util import get_dict
-from node import Node
 from transaction import Transaction
+from node import Node
+from console import Console
 
 app = Flask(__name__)
 log = logging.getLogger('werkzeug')
